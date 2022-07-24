@@ -14,7 +14,7 @@ const DashboardStats = () => {
               className="flex align-items-center justify-content-center bg-blue-100 border-round"
               style={{ width: "2.5rem", height: "2.5rem" }}
             >
-              <i className="pi pi-shopping-cart text-blue-500 text-xl"></i>
+              <i className="pi pi-shopping-cart text-blue-500 text-xl font-large"></i>
             </div>
           </div>
           <span className="text-green-500 font-medium">24 new </span>

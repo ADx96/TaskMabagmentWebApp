@@ -1,0 +1,22 @@
+.item-wrapper {
+}
+
+.item-list {
+  display: inline-grid;
+  width: 30%;
+  padding: 20px;
+  list-style: outside none none;
+}
+
+.sub-text {
+  bottom: 50%;
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.item-list-icon {
+  display: inline-block;
+  width: 10%;
+  list-style: outside none none;
+}
