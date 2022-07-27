@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../../Styles/OrderListStyles.css";
 import { ProgressBar } from "primereact/progressbar";
-import { Card } from "primereact/card";
 
 const EmployeesTasksList = () => {
   const [data, setData] = useState([

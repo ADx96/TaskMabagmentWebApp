@@ -90,7 +90,7 @@ const AddTaskForm = () => {
             <label htmlFor="TaskName">TaskName</label>
           </span>
         </div>
-        <div class="field col-12 md:col-6">
+        <div className="field col-12 md:col-6">
           <span className="p-float-label">
             <Dropdown
               //   value={city}
@@ -103,7 +103,7 @@ const AddTaskForm = () => {
             <label htmlFor="ForTask">Task Manager</label>
           </span>
         </div>
-        <div class="field col-12 md:col-6">
+        <div className="field col-12 md:col-6">
           <span className="p-float-label">
             <MultiSelect
               value={selectedCountries}
@@ -151,10 +151,10 @@ const AddTaskForm = () => {
             id="address"
             type="text"
             rows="4"
-            class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+            className="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
           ></textarea>
         </div>
-        <div class="field col-12 md:col-6">
+        <div className="field col-12 md:col-6">
           <span className="p-float-label">
             <MultiSelect
               value={selectedCountries}

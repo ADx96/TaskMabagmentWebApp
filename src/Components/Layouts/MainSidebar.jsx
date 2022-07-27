@@ -5,23 +5,35 @@ import { Sidebar } from "primereact/sidebar";
 import "../../Styles/Layout.css";
 const MainSidebar = () => {
   const toast = useRef(null);
-  const items = [
-    {},
+  let items = [
     {
-      label: "Navigate",
+      label: "Options",
       items: [
         {
-          label: "React Website",
-          icon: "pi pi-external-link",
-          url: "https://reactjs.org/",
-        },
-        {
-          label: "Create task",
-          icon: "pi pi-upload",
-          command: (e) => {
+          label: "New",
+          icon: "pi pi-fw pi-plus",
+          command: () => {
             window.location.hash = "/fileupload";
           },
         },
+        {
+          label: "Delete",
+          icon: "pi pi-fw pi-trash",
+          url: "http://primetek.com.tr",
+        },
+      ],
+    },
+    {
+      label: "Account",
+      items: [
+        {
+          label: "Options",
+          icon: "pi pi-fw pi-cog",
+          command: () => {
+            window.location.hash = "/";
+          },
+        },
+        { label: "Sign Out", icon: "pi pi-fw pi-power-off" },
       ],
     },
   ];

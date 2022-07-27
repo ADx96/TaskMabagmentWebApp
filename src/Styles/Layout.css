@@ -29,7 +29,6 @@
 }
 
 .layout-main-container {
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
@@ -49,7 +48,7 @@
 
 .RightSideContainer {
   position: absolute;
-  bottom: 214px;
+  bottom: 70px;
   right: 0;
   width: 30%;
   min-height: 70vh;

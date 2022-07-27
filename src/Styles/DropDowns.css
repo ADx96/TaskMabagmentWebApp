@@ -1,0 +1,13 @@
+.new-dropdown .p-dropdown {
+  width: 14rem;
+  background: #2b323d;
+  border: none;
+}
+
+.new-dropdown .country-item-value img.flag {
+  width: 17px;
+}
+
+.country-item {
+  display: inline-flex;
+}

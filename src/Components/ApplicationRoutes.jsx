@@ -6,6 +6,7 @@ import Navbar from "./Layouts/Navbar";
 import AddTask from "./Pages/AddTask";
 import LoginPage from "./Pages/LoginPage";
 import DashboardPage from "./Pages/DashboardPage";
+import CreateEmployee from "./PagesComponents/CreateEmployee";
 
 const ApplicationRoutes = () => {
   const { pathname } = useLocation();
@@ -24,12 +25,23 @@ const ApplicationRoutes = () => {
             </MainContainer>
           }
         />
+
         <Route
           path="/CreateTask"
           element={
             <MainContainer>
               <AddTask />
             </MainContainer>
+          }
+        />
+        <Route
+          path="/CreateEmployee"
+          element={
+            <>
+              <MainContainer>
+                <CreateEmployee />
+              </MainContainer>
+            </>
           }
         />
       </Routes>

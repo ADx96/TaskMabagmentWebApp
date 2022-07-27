@@ -1,6 +1,6 @@
 import React from "react";
 import { Menubar } from "primereact/menubar";
-import { MenuItems } from "./MenuItems";
+import { Button } from "primereact/button";
 
 const Navbar = () => {
   const start = (
@@ -15,16 +15,19 @@ const Navbar = () => {
       className="mr-2"
     ></img>
   );
-  const end = <h2>Create A New task</h2>;
+  const end = (
+    <div style={{ marginRight: "50px" }}>
+      <Button
+        icon="pi pi-fw pi-power-off"
+        className="p-button-rounded p-button-secondary"
+        aria-label="Bookmark"
+      />
+    </div>
+  );
 
   return (
     <div className="card">
-      <Menubar
-        className="layout-topbar"
-        model={MenuItems}
-        start={start}
-        end={end}
-      />
+      <Menubar className="layout-topbar" start={start} end={end} />
     </div>
   );
 };
