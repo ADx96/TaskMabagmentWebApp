@@ -14,7 +14,7 @@ const circularDiv = {
 const WorkingHoursStats = () => {
   const percentage = 66;
   return (
-    <Card style={{ width: "25rem", marginBottom: "2em" }}>
+    <Card style={{ width: "25vw", marginBottom: "2em" }}>
       <h3 style={{ textAlign: "right" }}>Total Working Time</h3>
       <h1 style={{ textAlign: "right" }}>114 HR</h1>
       <div style={circularDiv}>

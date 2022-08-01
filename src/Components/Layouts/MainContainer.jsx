@@ -7,7 +7,7 @@ const MainContainer = ({ children }) => {
   const PageTitle = pathname.substr(1, pathname.length);
 
   return (
-    <div class="layout-main-container">
+    <div className="layout-main-container">
       {pathname !== "/Dashboard" && (
         <h1 style={{ marginBottom: "20px" }}>{PageTitle}</h1>
       )}

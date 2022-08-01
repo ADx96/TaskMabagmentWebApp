@@ -146,7 +146,7 @@ const AddTaskForm = () => {
           </span>
         </div>
         <div class="field col-12">
-          <label for="address">Description</label>
+          <label htmlFor="address">Description</label>
           <textarea
             id="address"
             type="text"

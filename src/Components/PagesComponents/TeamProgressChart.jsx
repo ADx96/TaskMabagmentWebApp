@@ -65,7 +65,7 @@ const TeamProgressChart = () => {
   return (
     <div
       className="surface-card shadow-2 border-round "
-      style={{ width: "25rem" }}
+      style={{ width: "25vw" }}
     >
       <h2 style={{ padding: "10px" }}>Overall Progress</h2>
       <div className="new-dropdown">

@@ -3,6 +3,8 @@ import { Card } from "primereact/card";
 import { InputText } from "primereact/inputtext";
 import { Dropdown } from "primereact/dropdown";
 import { Button } from "primereact/button";
+import ProfileFileUpload from "./ProfileFileUpload";
+import { Avatar } from "primereact/avatar";
 
 const citySelectItems = [
   { label: "New York", value: "NY" },
@@ -14,11 +16,24 @@ const citySelectItems = [
 
 const AddEmployeeForm = () => {
   const [selectedCountries, setSelectedCountries] = useState(null);
+  const [data, setData] = useState({
+    image: "",
+  });
 
   return (
     <Card>
-      <div class="formgrid grid">
-        <div class="field col-12 md:col-4 p-1">
+      <div className="col-12" style={{ marginTop: "-40px" }}>
+        <Avatar
+          label="P"
+          image={data.image}
+          style={{ width: "6rem", height: "6rem" }}
+          className="mr-2"
+          size="xlarge"
+          shape="circle"
+        />
+      </div>
+      <div className="formgrid grid">
+        <div className="field col-12 md:col-4 p-1">
           <span className="p-float-label">
             <InputText
               id="TaskName"
@@ -115,6 +130,9 @@ const AddEmployeeForm = () => {
             />
             <label htmlFor="Gender">Gender</label>
           </span>
+        </div>
+        <div className="col-12">
+          <ProfileFileUpload setData={setData} />
         </div>
       </div>
       <Button label="Submit" icon="pi pi-check" />

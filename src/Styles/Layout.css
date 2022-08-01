@@ -1,12 +1,12 @@
 .layout-sidebar {
   position: fixed;
-  width: 300px !important;
-  height: calc(100vh - 9rem) !important;
+  width: 280px !important;
+  height: 80vh !important;
   z-index: 999;
   overflow-y: auto;
   user-select: none;
   left: 2rem;
-  top: 2rem;
+  top: 1rem;
   transition: left 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, left 0.2s;
   transition: transform 0.2s, left 0.2s, -webkit-transform 0.2s;
@@ -38,7 +38,7 @@
 
 @media (min-width: 992px) {
   .layout-main-container {
-    margin-left: 300px;
+    margin-left: 270px;
   }
 }
 
@@ -47,9 +47,7 @@
 }
 
 .RightSideContainer {
-  position: absolute;
-  bottom: 70px;
-  right: 0;
-  width: 30%;
-  min-height: 70vh;
+  position: relative;
+  bottom: 30px;
+  min-height: 51vh;
 }

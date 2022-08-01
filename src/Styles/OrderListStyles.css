@@ -1,6 +1,3 @@
-.item-wrapper {
-}
-
 .item-list {
   display: inline-grid;
   width: 30%;
@@ -19,4 +16,9 @@
   display: inline-block;
   width: 10%;
   list-style: outside none none;
+}
+
+.Task-list-container {
+  overflow-x: scroll;
+  height: 409px;
 }

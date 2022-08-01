@@ -7,14 +7,18 @@ import WorkingHoursStats from "../PagesComponents/WorkingHoursStats";
 
 const DashboardPage = () => {
   return (
-    <div>
-      <DashboardStats />
-      <div className="RightSideContainer">
-        <AvatarGroups />
-        <WorkingHoursStats />
-        <TeamProgressChart />
+    <div className="grid">
+      <div className="col-12 xl:col-8">
+        <DashboardStats />
+        <EmployeesTasksList />
       </div>
-      <EmployeesTasksList />
+      <div className="col-12 xl:col-4 ">
+        <div className="RightSideContainer">
+          <AvatarGroups />
+          <WorkingHoursStats />
+          <TeamProgressChart />
+        </div>
+      </div>
     </div>
   );
 };
