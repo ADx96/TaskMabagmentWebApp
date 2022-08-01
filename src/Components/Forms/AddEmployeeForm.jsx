@@ -17,7 +17,7 @@ const citySelectItems = [
 const AddEmployeeForm = () => {
   const [selectedCountries, setSelectedCountries] = useState(null);
   const [data, setData] = useState({
-    image: "",
+    image: null,
   });
 
   return (

@@ -62,7 +62,7 @@ const ProfileFileUpload = ({ setData }) => {
           className="p-button-outlined p-button-rounded p-button-danger ml-auto"
           onClick={() => {
             onTemplateRemove(file, props.onRemove);
-            setData({ image: "" });
+            setData({ image: null });
           }}
         />
       </div>
@@ -97,7 +97,6 @@ const ProfileFileUpload = ({ setData }) => {
   };
   const myUploader = async (event) => {
     const file = event.files[0];
-
     setData({ image: file.objectURL });
   };
   return (

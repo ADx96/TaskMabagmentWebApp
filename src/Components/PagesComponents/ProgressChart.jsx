@@ -14,7 +14,7 @@ let basicOptions = {
   },
 };
 
-const TeamProgressChart = () => {
+const ProgressChart = () => {
   const [selectedCountry, setSelectedCountry] = useState("Last 7 Days");
 
   const [lineStylesData] = useState({
@@ -76,7 +76,6 @@ const TeamProgressChart = () => {
           onChange={onCountryChange}
           optionLabel="name"
           optionValue="name"
-          showClear
           valueTemplate={selectedCountryTemplate}
           itemTemplate={countryOptionTemplate}
         />
@@ -87,4 +86,4 @@ const TeamProgressChart = () => {
   );
 };
 
-export default TeamProgressChart;
+export default ProgressChart;

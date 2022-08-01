@@ -2,7 +2,7 @@ import React from "react";
 import AvatarGroups from "../PagesComponents/AvatarGroups";
 import DashboardStats from "../PagesComponents/DashboardStats";
 import EmployeesTasksList from "../PagesComponents/EmployeesTasksList";
-import TeamProgressChart from "../PagesComponents/TeamProgressChart";
+import ProgressChart from "../PagesComponents/ProgressChart";
 import WorkingHoursStats from "../PagesComponents/WorkingHoursStats";
 
 const DashboardPage = () => {
@@ -16,7 +16,7 @@ const DashboardPage = () => {
         <div className="RightSideContainer">
           <AvatarGroups />
           <WorkingHoursStats />
-          <TeamProgressChart />
+          <ProgressChart />
         </div>
       </div>
     </div>
